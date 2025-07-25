@@ -1,0 +1,33 @@
+.list {
+  flex: 1;
+  background: #0a0f17;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-left: 1px solid #1f2a37;
+  color: white;
+}
+
+.counterContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: #131c26;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.counterResolved,
+.counterUnresolved {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.counterText {
+  color: #f1f5f9;
+  font-weight: 500;
+  font-size: 0.95rem;
+}

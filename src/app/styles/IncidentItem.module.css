@@ -1,0 +1,76 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #131a24;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  color: white;
+}
+
+.item:hover {
+  background-color: #1f2733;
+  transform: scale(1.01);
+}
+
+.thumbnail {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid #2c3440;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.type {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #facc15;
+  margin-bottom: 0.2rem;
+}
+
+.time {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.resolveButton {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.resolveButton:hover {
+  background-color: #dc2626;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}

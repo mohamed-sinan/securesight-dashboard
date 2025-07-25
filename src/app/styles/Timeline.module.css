@@ -1,0 +1,64 @@
+.timelineWrapper {
+  padding: 1rem;
+  background: #12151e;
+  border-top: 1px solid #334155;
+  color: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.svg {
+  width: 100%;
+  aspect-ratio: 10 / 1;
+  display: block;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-family: 'Inter', sans-serif;
+  margin-top: -4px;
+}
+
+.labelItem {
+  color: #94a3b8;
+}
+
+.legend {
+  display: flex;
+  gap: 1rem;
+  padding-left: 5px;
+  font-size: 0.75rem;
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #ffffff;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.gun {
+  background-color: #e74c3c;
+}
+
+.access {
+  background-color: #f39c12;
+}
+
+.other {
+  background-color: #3498db;
+}
