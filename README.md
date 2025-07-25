@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SecureSight Dashboard 🔒📹
 
-## Getting Started
+A full-stack CCTV incident monitoring dashboard built with:
 
-First, run the development server:
+- **Next.js 15 (App Router)**
+- **TypeScript**
+- **Prisma ORM + SQLite**
+- **Lucide React Icons**
+- **API Routes (Edge runtime ready)**
+
+## 🚀 Features
+- Incident feed (Unresolved + Resolved)
+- Incident resolution with status update
+- Interactive incident viewer with timeline scrubber
+- Responsive UI with custom fonts and theme
+- Optimized for deployment on Vercel
+
+## 📸 Demo
+🔗 [Live Deployment on Vercel](https://securesight-dashboard-ao8h.vercel.app/)
+
+## 📦 Tech Stack
+- Frontend: React 19 + Next.js App Router
+- Backend: Prisma ORM with SQLite (Edge-compatible)
+- Styling: CSS Modules
+- Hosting: Vercel (Serverless)
+
+## 🛠️ Development
 
 ```bash
+git clone https://github.com/mohamed-sinan/securesight-dashboard
+cd securesight-dashboard
+npm install
+npx prisma generate
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧪 Seed Data
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npx prisma db push
+npm run seed
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧠 Notes
 
-## Learn More
+    For serverless deploys (like Vercel), Prisma Client is auto-generated using a postinstall hook.
 
-To learn more about Next.js, take a look at the following resources:
+    This app uses mocked incident thumbnails and camera data for demo purposes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📬 Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Created by Mohamed Sinan
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### 2. **Push the README to GitHub**
+```bash
+git add README.md
+git commit -m "Add README"
+git push origin main
